@@ -1,6 +1,18 @@
 import { BiCodeAlt, BiLinkExternal } from "react-icons/bi"
 
-const Project = ({ description, websiteLink, codeLink, img, imgAlt }) => {
+const Project = ({
+  description,
+  websiteLink,
+  codeLink,
+  img,
+  imgAlt
+}: {
+  description: string
+  websiteLink: string
+  codeLink: string
+  img: string
+  imgAlt: string
+}) => {
   const goToWebsite = () => {
     window.open(websiteLink, "_blank")
   }

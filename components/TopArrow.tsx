@@ -23,14 +23,16 @@ const TopArrow = () => {
   }
 
   return (
-    visible && (
-      <div
-        onClick={scrollToTop}
-        className="fixed bottom-5 right-5 cursor-pointer hover:opacity-50 duration-300"
-      >
-        <BiArrowToTop className="text-2xl animate-bounce" />
-      </div>
-    )
+    <>
+      {visible && (
+        <div
+          onClick={scrollToTop}
+          className="fixed bottom-5 right-5 cursor-pointer hover:opacity-50 duration-300"
+        >
+          <BiArrowToTop className="text-2xl animate-bounce" />
+        </div>
+      )}
+    </>
   )
 }
 
