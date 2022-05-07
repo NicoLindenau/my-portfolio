@@ -1,4 +1,8 @@
 import Project from "./Project"
+import fullstackTodolist from "../public/fullstack-todolist.png"
+import mkReinigung from "../public/mk-reinigung.png"
+import onlineShop from "../public/online-shop.png"
+import sortingAlgorithmVisualizer from "../public/sorting-algorithm-visualizer.png"
 
 const Projects = () => {
   return (
@@ -9,15 +13,29 @@ const Projects = () => {
           description="Cleaning Service Website created with NEXT.js and tailwindcss."
           websiteLink="https://mk-reinigung.vercel.app/"
           codeLink="https://github.com/NicoLindenau/mk-reinigung"
-          img="mk-reinigung.png"
-          imgAlt="Cleaning Service Website"
+          img={mkReinigung}
+          imgAlt="cleaning service website"
         />
         <Project
           description="Fullstack Todolist created with NEXT.js, tailwindcss, node.js, express and MongoDB"
-          websiteLink="https://mern-todo-with-next.vercel.app/"
+          websiteLink="https://mern-todo-with-nextjs.vercel.app/"
           codeLink="https://github.com/NicoLindenau/mern-todo-with-nextjs"
-          img="fullstack-todolist.png"
-          imgAlt="Fullstack Todolist"
+          img={fullstackTodolist}
+          imgAlt="fullstack todolist"
+        />
+        <Project
+          description="Fullstack online shop created with React, Bootstrap, Redux, node.js, express and MongoDB"
+          websiteLink="https://proshopnico.herokuapp.com/"
+          codeLink="https://github.com/NicoLindenau/mern-online-shop"
+          img={onlineShop}
+          imgAlt="online shop"
+        />
+        <Project
+          description="Visualize the merge-sort algorithm created with NEXT.js, tailwindcss and TypeScript"
+          websiteLink="https://sorting-algorithm-visualizer-black.vercel.app/"
+          codeLink="https://github.com/NicoLindenau/sorting-algorithm-visualizer"
+          img={sortingAlgorithmVisualizer}
+          imgAlt="sorting algorithm visualizer"
         />
       </div>
     </>

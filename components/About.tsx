@@ -11,7 +11,7 @@ const About = () => {
             <Image src={man} alt="man" />
           </div>
           <div>
-            <h2 className="text-4xl mb-10">That's me</h2>
+            <h2 className="text-4xl mb-10">That&apos;s me</h2>
             <h4 className="text-xl">
               A motivated guy from Germany. I have a passion for sport and like
               to improve myself continuously.

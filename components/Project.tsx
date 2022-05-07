@@ -1,4 +1,12 @@
+import Image from "next/image"
 import { BiCodeAlt, BiLinkExternal } from "react-icons/bi"
+
+type StaticImageData = {
+  src: string
+  height: number
+  width: number
+  placeholder?: string
+}
 
 const Project = ({
   description,
@@ -10,7 +18,7 @@ const Project = ({
   description: string
   websiteLink: string
   codeLink: string
-  img: string
+  img: StaticImageData
   imgAlt: string
 }) => {
   const goToWebsite = () => {
@@ -44,7 +52,8 @@ const Project = ({
           </div>
         </div>
       </div>
-      <img className="object-contain" src={img} alt={imgAlt} />
+      {/* <img className="object-contain" src={img} alt={imgAlt} /> */}
+      <Image src={img} alt={imgAlt} />
     </div>
   )
 }

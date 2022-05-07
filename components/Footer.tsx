@@ -8,6 +8,7 @@ const Footer = () => {
           className="m-5 mr-0 hover:opacity-50 duration-300"
           href="https://github.com/NicoLindenau"
           target="_blank"
+          rel="noreferrer"
         >
           <AiFillGithub />
         </a>
@@ -15,6 +16,7 @@ const Footer = () => {
           className="m-5 hover:opacity-50 duration-300"
           href="https://www.linkedin.com/in/nico-lindenau-187759214/"
           target="_blank"
+          rel="noreferrer"
         >
           <AiFillLinkedin />
         </a>
