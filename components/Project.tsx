@@ -52,8 +52,9 @@ const Project = ({
           </div>
         </div>
       </div>
-      {/* <img className="object-contain" src={img} alt={imgAlt} /> */}
-      <Image src={img} alt={imgAlt} />
+      <div className="h-full flex">
+        <Image src={img} alt={imgAlt} />
+      </div>
     </div>
   )
 }
